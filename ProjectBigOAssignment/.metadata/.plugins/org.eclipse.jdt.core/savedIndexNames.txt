@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+F:\Programming Workspace\JAVA\ProjectBigOAssignment\.metadata\.plugins\org.eclipse.jdt.core
+420142203.index
+3003411528.index

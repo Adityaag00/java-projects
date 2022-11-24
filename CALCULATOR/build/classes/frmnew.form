@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JDialog" name="diamsg">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="273" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jLabel3" max="32767" attributes="0"/>
+                      <Component id="jLabel2" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" pref="298" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="53" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jLabel3" pref="46" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new ImageIcon(&quot;src\\calcreal.png&quot;)" type="code"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="App Version 1.01 Developed By Aditya Agrawal"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Support For More Apps ..."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="diasource">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" pref="388" max="-2" attributes="0"/>
+                  <EmptySpace pref="108" max="32767" attributes="0"/>
+              </Group>
+              <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" pref="31" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" pref="408" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="SOURCE CODE"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="&#xa;import com.sun.glass.events.KeyEvent;&#xa;import javax.swing.ImageIcon;&#xa;import javax.swing.JOptionPane;&#xa;&#xa;&#xa;public class frmnew extends javax.swing.JFrame {&#xa;    double firstno,secno,res;&#xa;    String operat=&quot;&quot;;&#xa;    boolean already=false;&#xa;    &#xa;    public frmnew() {&#xa;        initComponents();&#xa;        this.setTitle(&quot;JAVA Calculator&quot;);&#xa;    }&#xa;    &#xa;    public void ButtonValue(String Number) {&#xa;        txtall.setText(txtall.getText()+Number);&#xa;        txtall.requestFocus();&#xa;    }&#xa;    public void DoNothing() {&#xa;        txtall.setText(txtall.getText());&#xa;        txtall.requestFocus();&#xa;    }&#xa;    public void operation(){&#xa;        firstno=Double.parseDouble(txtall.getText());&#xa;        txtall.setText(&quot;&quot;);&#xa;        txtall.requestFocus();&#xa;    }&#xa;     @SuppressWarnings(&quot;unchecked&quot;)&#xa;    // &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;                          &#xa;    private void initComponents() {&#xa;&#xa;        diamsg = new javax.swing.JDialog();&#xa;        jLabel1 = new javax.swing.JLabel();&#xa;        jLabel2 = new javax.swing.JLabel();&#xa;        jLabel3 = new javax.swing.JLabel();&#xa;        diasource = new javax.swing.JDialog();&#xa;        jLabel4 = new javax.swing.JLabel();&#xa;        jScrollPane2 = new javax.swing.JScrollPane();&#xa;        jTextArea1 = new javax.swing.JTextArea();&#xa;        txtall = new javax.swing.JTextField();&#xa;        btnrecip = new javax.swing.JButton();&#xa;        btnequal = new javax.swing.JButton();&#xa;        btnsqrt = new javax.swing.JButton();&#xa;        btnclear = new javax.swing.JButton();&#xa;        btnmod = new javax.swing.JButton();&#xa;        btnreset = new javax.swing.JButton();&#xa;        btnbackspace = new javax.swing.JButton();&#xa;        lblmemory = new javax.swing.JLabel();&#xa;        btnmult = new javax.swing.JButton();&#xa;        btnmin = new javax.swing.JButton();&#xa;        btnplus = new javax.swing.JButton();&#xa;        btndiv = new javax.swing.JButton();&#xa;        btn6 = new javax.swing.JButton();&#xa;        btn3 = new javax.swing.JButton();&#xa;        btndot = new javax.swing.JButton();&#xa;        btn9 = new javax.swing.JButton();&#xa;        btn5 = new javax.swing.JButton();&#xa;        btn2 = new javax.swing.JButton();&#xa;        btnplusmin = new javax.swing.JButton();&#xa;        btn8 = new javax.swing.JButton();&#xa;        btn0 = new javax.swing.JButton();&#xa;        btn7 = new javax.swing.JButton();&#xa;        btn4 = new javax.swing.JButton();&#xa;        btnmemread = new javax.swing.JButton();&#xa;        btnmemadd = new javax.swing.JButton();&#xa;        btnmemsave = new javax.swing.JButton();&#xa;        btnmemclear = new javax.swing.JButton();&#xa;        btn1 = new javax.swing.JButton();&#xa;        MenuBar = new javax.swing.JMenuBar();&#xa;        menufile = new javax.swing.JMenu();&#xa;        menuitemadd = new javax.swing.JMenuItem();&#xa;        menuitemsub = new javax.swing.JMenuItem();&#xa;        menuitemmult = new javax.swing.JMenuItem();&#xa;        menuitemdiv = new javax.swing.JMenuItem();&#xa;        jMenu2 = new javax.swing.JMenu();&#xa;        menuitemequal = new javax.swing.JMenuItem();&#xa;        jMenu4 = new javax.swing.JMenu();&#xa;        jMenuItem1 = new javax.swing.JMenuItem();&#xa;        jMenu5 = new javax.swing.JMenu();&#xa;        menuitemsource = new javax.swing.JMenuItem();&#xa;&#xa;        jLabel1.setIcon(new ImageIcon(&quot;src\u005c\u005ccalcreal.png&quot;));&#xa;&#xa;        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);&#xa;        jLabel2.setText(&quot;App Version 1.01 Developed By Aditya Agrawal&quot;);&#xa;&#xa;        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);&#xa;        jLabel3.setText(&quot;Support For More Apps ...&quot;);&#xa;&#xa;        javax.swing.GroupLayout diamsgLayout = new javax.swing.GroupLayout(diamsg.getContentPane());&#xa;        diamsg.getContentPane().setLayout(diamsgLayout);&#xa;        diamsgLayout.setHorizontalGroup(&#xa;            diamsgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addGroup(diamsgLayout.createSequentialGroup()&#xa;                .addGap(17, 17, 17)&#xa;                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))&#xa;            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, diamsgLayout.createSequentialGroup()&#xa;                .addGroup(diamsgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)&#xa;                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)&#xa;                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))&#xa;                .addContainerGap())&#xa;        );&#xa;        diamsgLayout.setVerticalGroup(&#xa;            diamsgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addGroup(diamsgLayout.createSequentialGroup()&#xa;                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addGap(18, 18, 18)&#xa;                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)&#xa;                .addContainerGap())&#xa;        );&#xa;&#xa;        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);&#xa;        jLabel4.setText(&quot;SOURCE CODE&quot;);&#xa;&#xa;        jTextArea1.setColumns(20);&#xa;        jTextArea1.setRows(5);&#xa;        jScrollPane2.setViewportView(jTextArea1);&#xa;&#xa;        javax.swing.GroupLayout diasourceLayout = new javax.swing.GroupLayout(diasource.getContentPane());&#xa;        diasource.getContentPane().setLayout(diasourceLayout);&#xa;        diasourceLayout.setHorizontalGroup(&#xa;            diasourceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addGroup(diasourceLayout.createSequentialGroup()&#xa;                .addGap(90, 90, 90)&#xa;                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addContainerGap(108, Short.MAX_VALUE))&#xa;            .addComponent(jScrollPane2)&#xa;        );&#xa;        diasourceLayout.setVerticalGroup(&#xa;            diasourceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addGroup(diasourceLayout.createSequentialGroup()&#xa;                .addContainerGap()&#xa;                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)&#xa;                .addGap(16, 16, 16))&#xa;        );&#xa;&#xa;        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);&#xa;        setResizable(false);&#xa;&#xa;        txtall.setHorizontalAlignment(javax.swing.JTextField.RIGHT);&#xa;        txtall.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                txtallActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        txtall.addKeyListener(new java.awt.event.KeyAdapter() {&#xa;            public void keyTyped(java.awt.event.KeyEvent evt) {&#xa;                txtallKeyTyped(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnrecip.setText(&quot;1/x&quot;);&#xa;        btnrecip.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnrecipActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnequal.setText(&quot;=&quot;);&#xa;        btnequal.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnequalActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnsqrt.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btnsqrt.setText(&quot;&#x221a;x&quot;);&#xa;        btnsqrt.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnsqrtActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnclear.setText(&quot;C&quot;);&#xa;        btnclear.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnclearActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmod.setText(&quot;%&quot;);&#xa;        btnmod.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmodActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnreset.setText(&quot;CE&quot;);&#xa;        btnreset.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnresetActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnbackspace.setText(&quot;&#x2190;&quot;);&#xa;        btnbackspace.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnbackspaceActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        lblmemory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));&#xa;&#xa;        btnmult.setText(&quot;X&quot;);&#xa;        btnmult.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmultActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmin.setText(&quot;-&quot;);&#xa;        btnmin.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnminActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnplus.setText(&quot;+&quot;);&#xa;        btnplus.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnplusActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btndiv.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btndiv.setText(&quot;/&quot;);&#xa;        btndiv.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btndivActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn6.setText(&quot;6&quot;);&#xa;        btn6.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn6ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn3.setText(&quot;3&quot;);&#xa;        btn3.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn3ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btndot.setText(&quot;.&quot;);&#xa;        btndot.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btndotActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn9.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btn9.setText(&quot;9&quot;);&#xa;        btn9.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn9ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn5.setText(&quot;5&quot;);&#xa;        btn5.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn5ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn2.setText(&quot;2&quot;);&#xa;        btn2.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn2ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnplusmin.setText(&quot;+/-&quot;);&#xa;        btnplusmin.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnplusminActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn8.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btn8.setText(&quot;8&quot;);&#xa;        btn8.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn8ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn0.setText(&quot;0&quot;);&#xa;        btn0.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn0ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn7.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btn7.setText(&quot;7&quot;);&#xa;        btn7.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn7ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn4.setText(&quot;4&quot;);&#xa;        btn4.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn4ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmemread.setText(&quot;MR&quot;);&#xa;        btnmemread.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmemreadActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmemadd.setText(&quot;M+&quot;);&#xa;        btnmemadd.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmemaddActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmemsave.setText(&quot;MS&quot;);&#xa;        btnmemsave.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmemsaveActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btnmemclear.setFont(new java.awt.Font(&quot;Yu Gothic&quot;, 0, 12)); // NOI18N&#xa;        btnmemclear.setText(&quot;MC&quot;);&#xa;        btnmemclear.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btnmemclearActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        btn1.setText(&quot;1&quot;);&#xa;        btn1.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                btn1ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        menufile.setText(&quot;File&quot;);&#xa;&#xa;        menuitemadd.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));&#xa;        menuitemadd.setText(&quot;Add&quot;);&#xa;        menuitemadd.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemaddActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        menufile.add(menuitemadd);&#xa;&#xa;        menuitemsub.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));&#xa;        menuitemsub.setText(&quot;Subtract&quot;);&#xa;        menuitemsub.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemsubActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        menufile.add(menuitemsub);&#xa;&#xa;        menuitemmult.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));&#xa;        menuitemmult.setText(&quot;Multiply&quot;);&#xa;        menuitemmult.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemmultActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        menufile.add(menuitemmult);&#xa;&#xa;        menuitemdiv.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));&#xa;        menuitemdiv.setText(&quot;Divide&quot;);&#xa;        menuitemdiv.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemdivActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        menufile.add(menuitemdiv);&#xa;&#xa;        MenuBar.add(menufile);&#xa;&#xa;        jMenu2.setText(&quot;View&quot;);&#xa;&#xa;        menuitemequal.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_END, 0));&#xa;        menuitemequal.setText(&quot;Equals&quot;);&#xa;        menuitemequal.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemequalActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        jMenu2.add(menuitemequal);&#xa;&#xa;        MenuBar.add(jMenu2);&#xa;&#xa;        jMenu4.setText(&quot;About&quot;);&#xa;        jMenu4.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                jMenu4ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;&#xa;        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ALT, java.awt.event.InputEvent.CTRL_MASK));&#xa;        jMenuItem1.setText(&quot;About calculator&quot;);&#xa;        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                jMenuItem1ActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        jMenu4.add(jMenuItem1);&#xa;&#xa;        MenuBar.add(jMenu4);&#xa;&#xa;        jMenu5.setText(&quot;Source&quot;);&#xa;&#xa;        menuitemsource.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));&#xa;        menuitemsource.setText(&quot;Source Code&quot;);&#xa;        menuitemsource.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                menuitemsourceActionPerformed(evt);&#xa;            }&#xa;        });&#xa;        jMenu5.add(menuitemsource);&#xa;&#xa;        MenuBar.add(jMenu5);&#xa;&#xa;        setJMenuBar(MenuBar);&#xa;&#xa;        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());&#xa;        getContentPane().setLayout(layout);&#xa;        layout.setHorizontalGroup(&#xa;            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addComponent(txtall)&#xa;            .addGroup(layout.createSequentialGroup()&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btnmemread, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnmemsave, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnmemadd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnmemclear, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btn4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn0, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btn5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnplusmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btn6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btndot, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btn9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btnmult, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnplus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btndiv, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btnmod, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnrecip, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnequal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addComponent(btnsqrt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                .addGap(0, 0, Short.MAX_VALUE))&#xa;            .addGroup(layout.createSequentialGroup()&#xa;                .addComponent(lblmemory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addComponent(btnbackspace, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addComponent(btnreset, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addComponent(btnclear, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;        );&#xa;        layout.setVerticalGroup(&#xa;            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;            .addGroup(layout.createSequentialGroup()&#xa;                .addComponent(txtall, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(lblmemory, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)&#xa;                        .addComponent(btnbackspace)&#xa;                        .addComponent(btnreset)&#xa;                        .addComponent(btnclear)))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btnsqrt)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnmod, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnrecip, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btndiv)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnmult, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnmin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btn9)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btn8)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btn7)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))&#xa;                    .addGroup(layout.createSequentialGroup()&#xa;                        .addComponent(btnmemclear)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnmemread, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)&#xa;                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                        .addComponent(btnmemsave, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))&#xa;                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)&#xa;                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)&#xa;                    .addComponent(btnequal)&#xa;                    .addComponent(btnplus)&#xa;                    .addComponent(btndot)&#xa;                    .addComponent(btnplusmin)&#xa;                    .addComponent(btn0)&#xa;                    .addComponent(btnmemadd))&#xa;                .addContainerGap())&#xa;        );&#xa;&#xa;        pack();&#xa;        setLocationRelativeTo(null);&#xa;    }// &lt;/editor-fold&gt;                        &#xa;&#xa;    private void txtallActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;     &#xa;    }                                      &#xa;&#xa;    private void btnrecipActionPerformed(java.awt.event.ActionEvent evt) {                                         &#xa;        operation();&#xa;        res=1/firstno;&#xa;        txtall.setText(&quot;&quot;+res);&#xa;        txtall.requestFocus();&#xa;        already=true;&#xa;    }                                        &#xa;&#xa;    private void btnequalActionPerformed(java.awt.event.ActionEvent evt) {                                         &#xa;        secno=Double.parseDouble(txtall.getText());&#xa;        &#xa;        if(operat.equals(&quot;+&quot;)) {&#xa;            res=firstno+secno;&#xa;        }&#xa;        if(operat.equals(&quot;-&quot;)) {&#xa;            res=firstno-secno;&#xa;        }&#xa;        if(operat.equals(&quot;*&quot;)) {&#xa;            res=firstno*secno;&#xa;        }&#xa;        if(operat.equals(&quot;/&quot;)) {&#xa;            res=firstno/secno;&#xa;        }&#xa;        if(operat.equals(&quot;%&quot;)) {&#xa;            res=firstno%secno;&#xa;        }&#xa;        if(operat.equals(&quot;&quot;))&#xa;            JOptionPane.showMessageDialog(this,&quot;PLEASE SELECT ANY OPERATION FIRST&quot;,&quot;ERROR&quot;,JOptionPane.ERROR_MESSAGE);&#xa;        &#xa;        txtall.setText(&quot;&quot;+res);&#xa;        txtall.requestFocus();&#xa;        txtall.selectAll();&#xa;    }                                        &#xa;&#xa;    private void btnsqrtActionPerformed(java.awt.event.ActionEvent evt) {                                        &#xa;        operation();&#xa;        res=Math.sqrt(firstno);&#xa;        txtall.setText(&quot;&quot;+res);&#xa;        txtall.requestFocus();&#xa;        already=true;&#xa;        if(txtall.getText().equals(&quot;NaN&quot;))&#xa;            txtall.setText(&quot;Invalid Input By User&quot;);&#xa;    }                                       &#xa;&#xa;    private void btnclearActionPerformed(java.awt.event.ActionEvent evt) {                                         &#xa;        txtall.setText(&quot;&quot;);&#xa;        txtall.requestFocus();&#xa;        already=false;&#xa;    }                                        &#xa;&#xa;    private void btnmodActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;        operation();&#xa;        operat=&quot;%&quot;;&#xa;    }                                      &#xa;&#xa;    private void btnresetActionPerformed(java.awt.event.ActionEvent evt) {                                         &#xa;        txtall.setText(&quot;&quot;);&#xa;        txtall.requestFocus();&#xa;        already=false;&#xa;        firstno=0;&#xa;        secno=0;&#xa;        operat=&quot;&quot;;&#xa;&#xa;    }                                        &#xa;&#xa;    private void btnbackspaceActionPerformed(java.awt.event.ActionEvent evt) {                                             &#xa;       if(txtall.getText().length()&gt;0) {&#xa;           StringBuilder stbr = new StringBuilder(txtall.getText());&#xa;           stbr.deleteCharAt(txtall.getText().length()-1);&#xa;           txtall.setText(stbr.toString());&#xa;           txtall.requestFocus();&#xa;       }  &#xa;       if(txtall.getText().length()==0)&#xa;           txtall.requestFocus();&#xa;    }                                            &#xa;&#xa;    private void btnmultActionPerformed(java.awt.event.ActionEvent evt) {                                        &#xa;        operation();&#xa;        operat=&quot;*&quot;;&#xa;    }                                       &#xa;&#xa;    private void btnminActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;        operation();&#xa;        operat=&quot;-&quot;;&#xa;    }                                      &#xa;&#xa;    private void btnplusActionPerformed(java.awt.event.ActionEvent evt) {                                        &#xa;        operation();&#xa;        operat=&quot;+&quot;;&#xa;    }                                       &#xa;&#xa;    private void btndivActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;        operation();&#xa;        operat=&quot;/&quot;;&#xa;    }                                      &#xa;&#xa;    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn6.getText());&#xa;    }                                    &#xa;&#xa;    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn3.getText());&#xa;    }                                    &#xa;&#xa;    private void btndotActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;       if(already==true)&#xa;            DoNothing();&#xa;       else&#xa;            ButtonValue(btndot.getText());&#xa;       already=true;&#xa;    }                                      &#xa;&#xa;    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn9.getText());&#xa;    }                                    &#xa;&#xa;    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn5.getText());&#xa;    }                                    &#xa;&#xa;    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn2.getText());&#xa;    }                                    &#xa;&#xa;    private void btnplusminActionPerformed(java.awt.event.ActionEvent evt) {                                           &#xa;        operation();&#xa;        res=(-1)*firstno;&#xa;        txtall.setText(&quot;&quot;+res);&#xa;        txtall.requestFocus();&#xa;        already=true;&#xa;    }                                          &#xa;&#xa;    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn8.getText());&#xa;    }                                    &#xa;&#xa;    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn0.getText());&#xa;    }                                    &#xa;&#xa;    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn7.getText());&#xa;        &#xa;    }                                    &#xa;&#xa;    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn4.getText());&#xa;    }                                    &#xa;&#xa;    private void btnmemreadActionPerformed(java.awt.event.ActionEvent evt) {                                           &#xa;        if(lblmemory.getText().length()&lt;=0)&#xa;            JOptionPane.showMessageDialog(this,&quot;Please Do Memory Save First&quot;,&quot;ERROR&quot;,JOptionPane.ERROR_MESSAGE);&#xa;        else {&#xa;            txtall.setText(lblmemory.getText());&#xa;            lblmemory.setText(&quot;&quot;);&#xa;        }&#xa;        txtall.requestFocus();&#xa;    }                                          &#xa;&#xa;    private void btnmemaddActionPerformed(java.awt.event.ActionEvent evt) {                                          &#xa;        if(lblmemory.getText().length()&lt;=0)&#xa;            JOptionPane.showMessageDialog(this,&quot;Please Do Memory Save First&quot;,&quot;ERROR&quot;,JOptionPane.ERROR_MESSAGE);&#xa;        else {&#xa;            double memo=Double.parseDouble(lblmemory.getText());&#xa;            double txtfie=Double.parseDouble(txtall.getText());&#xa;            double resultadd=memo+txtfie;&#xa;            txtall.setText(&quot;&quot;+resultadd);&#xa;            txtall.requestFocus();&#xa;            txtall.selectAll();&#xa;        }&#xa;    }                                         &#xa;&#xa;    private void btnmemsaveActionPerformed(java.awt.event.ActionEvent evt) {                                           &#xa;        lblmemory.setText(txtall.getText());&#xa;        txtall.setText(&quot;&quot;);&#xa;        txtall.requestFocus();&#xa;    }                                          &#xa;&#xa;    private void btnmemclearActionPerformed(java.awt.event.ActionEvent evt) {                                            &#xa;        lblmemory.setText(&quot;&quot;);&#xa;        txtall.requestFocus();&#xa;    }                                           &#xa;&#xa;    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {                                     &#xa;        if(txtall.getText().length()&gt;14)&#xa;          DoNothing();&#xa;        else&#xa;          ButtonValue(btn1.getText());&#xa;    }                                    &#xa;&#xa;    private void txtallKeyTyped(java.awt.event.KeyEvent evt) {                                &#xa;        if(!((evt.getKeyChar()&gt;=KeyEvent.VK_0)&amp;&amp;(evt.getKeyChar()&lt;=KeyEvent.VK_9)))&#xa;            evt.consume();&#xa;        if(txtall.getText().length()&gt;14)&#xa;            evt.consume();&#xa;        txtall.requestFocus();&#xa;        if(evt.getKeyChar()==KeyEvent.VK_ENTER)&#xa;            btnequal.doClick();&#xa;    }                               &#xa;&#xa;    private void menuitemmultActionPerformed(java.awt.event.ActionEvent evt) {                                             &#xa;        btnmult.doClick();&#xa;    }                                            &#xa;&#xa;    private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {                                       &#xa;        &#xa;    }                                      &#xa;&#xa;    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {                                           &#xa;        diamsg.pack();&#xa;        diamsg.setLocationRelativeTo(this);&#xa;        diamsg.setVisible(true);&#xa;    }                                          &#xa;&#xa;    private void menuitemaddActionPerformed(java.awt.event.ActionEvent evt) {                                            &#xa;        btnplus.doClick();&#xa;    }                                           &#xa;&#xa;    private void menuitemsubActionPerformed(java.awt.event.ActionEvent evt) {                                            &#xa;        btnmin.doClick();&#xa;    }                                           &#xa;&#xa;    private void menuitemdivActionPerformed(java.awt.event.ActionEvent evt) {                                            &#xa;        btndiv.doClick();&#xa;    }                                           &#xa;&#xa;    private void menuitemequalActionPerformed(java.awt.event.ActionEvent evt) {                                              &#xa;        btnequal.doClick();&#xa;    }                                             &#xa;&#xa;    private void menuitemsourceActionPerformed(java.awt.event.ActionEvent evt) {                                               &#xa;        diasource.pack();&#xa;        diasource.setLocationRelativeTo(this);&#xa;        diasource.setVisible(true);&#xa;    }                                              &#xa;&#xa;    /**&#xa;     * @param args the command line arguments&#xa;     */&#xa;    public static void main(String args[]) {&#xa;        /* Set the Nimbus look and feel */&#xa;        //&lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot; Look and feel setting code (optional) &quot;&gt;&#xa;        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.&#xa;         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html &#xa;         */&#xa;        try {&#xa;            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {&#xa;                if (&quot;Nimbus&quot;.equals(info.getName())) {&#xa;                    javax.swing.UIManager.setLookAndFeel(info.getClassName());&#xa;                    break;&#xa;                }&#xa;            }&#xa;        } catch (ClassNotFoundException ex) {&#xa;            java.util.logging.Logger.getLogger(frmnew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);&#xa;        } catch (InstantiationException ex) {&#xa;            java.util.logging.Logger.getLogger(frmnew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);&#xa;        } catch (IllegalAccessException ex) {&#xa;            java.util.logging.Logger.getLogger(frmnew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);&#xa;        } catch (javax.swing.UnsupportedLookAndFeelException ex) {&#xa;            java.util.logging.Logger.getLogger(frmnew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);&#xa;        }&#xa;        //&lt;/editor-fold&gt;&#xa;&#xa;        /* Create and display the form */&#xa;        java.awt.EventQueue.invokeLater(new Runnable() {&#xa;            public void run() {&#xa;                new frmnew().setVisible(true);&#xa;            }&#xa;        });&#xa;    }&#xa;&#xa;    // Variables declaration - do not modify                     &#xa;    private javax.swing.JMenuBar MenuBar;&#xa;    private javax.swing.JButton btn0;&#xa;    private javax.swing.JButton btn1;&#xa;    private javax.swing.JButton btn2;&#xa;    private javax.swing.JButton btn3;&#xa;    private javax.swing.JButton btn4;&#xa;    private javax.swing.JButton btn5;&#xa;    private javax.swing.JButton btn6;&#xa;    private javax.swing.JButton btn7;&#xa;    private javax.swing.JButton btn8;&#xa;    private javax.swing.JButton btn9;&#xa;    private javax.swing.JButton btnbackspace;&#xa;    private javax.swing.JButton btnclear;&#xa;    private javax.swing.JButton btndiv;&#xa;    private javax.swing.JButton btndot;&#xa;    private javax.swing.JButton btnequal;&#xa;    private javax.swing.JButton btnmemadd;&#xa;    private javax.swing.JButton btnmemclear;&#xa;    private javax.swing.JButton btnmemread;&#xa;    private javax.swing.JButton btnmemsave;&#xa;    private javax.swing.JButton btnmin;&#xa;    private javax.swing.JButton btnmod;&#xa;    private javax.swing.JButton btnmult;&#xa;    private javax.swing.JButton btnplus;&#xa;    private javax.swing.JButton btnplusmin;&#xa;    private javax.swing.JButton btnrecip;&#xa;    private javax.swing.JButton btnreset;&#xa;    private javax.swing.JButton btnsqrt;&#xa;    private javax.swing.JDialog diamsg;&#xa;    private javax.swing.JDialog diasource;&#xa;    private javax.swing.JLabel jLabel1;&#xa;    private javax.swing.JLabel jLabel2;&#xa;    private javax.swing.JLabel jLabel3;&#xa;    private javax.swing.JLabel jLabel4;&#xa;    private javax.swing.JMenu jMenu2;&#xa;    private javax.swing.JMenu jMenu4;&#xa;    private javax.swing.JMenu jMenu5;&#xa;    private javax.swing.JMenuItem jMenuItem1;&#xa;    private javax.swing.JScrollPane jScrollPane2;&#xa;    private javax.swing.JTextArea jTextArea1;&#xa;    private javax.swing.JLabel lblmemory;&#xa;    private javax.swing.JMenu menufile;&#xa;    private javax.swing.JMenuItem menuitemadd;&#xa;    private javax.swing.JMenuItem menuitemdiv;&#xa;    private javax.swing.JMenuItem menuitemequal;&#xa;    private javax.swing.JMenuItem menuitemmult;&#xa;    private javax.swing.JMenuItem menuitemsource;&#xa;    private javax.swing.JMenuItem menuitemsub;&#xa;    private javax.swing.JTextField txtall;&#xa;    // End of variables declaration                   &#xa;}&#xa;&#xa;" containsInvalidXMLChars="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="MenuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menufile">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemadd">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+A"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Add"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemaddActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemsub">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+S"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Subtract"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemsubActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemmult">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+M"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Multiply"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemmultActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemdiv">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+D"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Divide"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemdivActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemequal">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="END"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Equals"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemequalActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="About"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu4ActionPerformed"/>
+          </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="About calculator"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Source"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuitemsource">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+S"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Source Code"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuitemsourceActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="MenuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="txtall" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnmemread" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnmemsave" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnmemadd" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnmemclear" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btn4" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn1" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn0" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn7" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btn5" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn2" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnplusmin" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn8" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btn6" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn3" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btndot" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btn9" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnmult" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnmin" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnplus" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btndiv" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnmod" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnrecip" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnequal" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnsqrt" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="lblmemory" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnbackspace" min="-2" pref="48" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnreset" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnclear" min="-2" pref="74" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="txtall" min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblmemory" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnbackspace" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnreset" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnclear" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnsqrt" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnmod" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnrecip" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btndiv" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnmult" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnmin" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btn9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn6" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn3" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btn8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn5" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn2" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btn7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn4" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btn1" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnmemclear" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnmemread" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnmemsave" min="-2" pref="28" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnequal" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnplus" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btndot" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnplusmin" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn0" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnmemadd" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtall">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtallKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnrecip">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1/x"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnrecipActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnequal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="="/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnequalActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnsqrt">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x221a;x"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnsqrtActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnclear">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnclearActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmod">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="%"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmodActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnreset">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnresetActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnbackspace">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x2190;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnbackspaceActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblmemory">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmult">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmultActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="-"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnminActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnplus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnplusActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btndiv">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="/"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndivActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="6"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn6ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn3ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btndot">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndotActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="9"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn9ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn5ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn2ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnplusmin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="+/-"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnplusminActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="8"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn8ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn0">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn0ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn7">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="7"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn7ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn4ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmemread">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmemreadActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmemadd">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M+"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmemaddActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmemsave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MS"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmemsaveActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnmemclear">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Yu Gothic" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmemclearActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn1ActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="newKey"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
