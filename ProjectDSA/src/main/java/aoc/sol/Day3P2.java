@@ -32,7 +32,7 @@ public class Day3P2 {
         out.close();
     }
 
-    public static int getValueAdjacent(List<String> strings, Direction direction, int x, int y) {
+    public static int getValueAdjacent(List<String> strings, Day3.Direction direction, int x, int y) {
         boolean found = false;
         int x1 = 0, y1 = 0;
         switch (direction) {
@@ -158,35 +158,35 @@ public class Day3P2 {
     public static int visitAllSides(int x, int y, List<String> strings) {
         List<Integer> temp = new ArrayList<>();
         int count = 0;
-        int up = getValueAdjacent(strings, Direction.UP, x, y);
+        int up = getValueAdjacent(strings, Day3.Direction.UP, x, y);
         if(up != 0) {
             temp.add(up);
         }
-        int down = getValueAdjacent(strings, Direction.DOWN, x, y);
+        int down = getValueAdjacent(strings, Day3.Direction.DOWN, x, y);
         if(down != 0) {
             temp.add(down);
         }
-        int left = getValueAdjacent(strings, Direction.LEFT, x, y);
+        int left = getValueAdjacent(strings, Day3.Direction.LEFT, x, y);
         if(left != 0) {
             temp.add(left);
         }
-        int right = getValueAdjacent(strings, Direction.RIGHT, x, y);
+        int right = getValueAdjacent(strings, Day3.Direction.RIGHT, x, y);
         if(right != 0) {
             temp.add(right);
         }
-        int upLeft = getValueAdjacent(strings, Direction.UP_LEFT, x, y);
+        int upLeft = getValueAdjacent(strings, Day3.Direction.UP_LEFT, x, y);
         if(upLeft != 0) {
             temp.add(upLeft);
         }
-        int upRight = getValueAdjacent(strings, Direction.UP_RIGHT, x, y);
+        int upRight = getValueAdjacent(strings, Day3.Direction.UP_RIGHT, x, y);
         if(upRight != 0) {
             temp.add(upRight);
         }
-        int downLeft = getValueAdjacent(strings, Direction.DOWN_LEFT, x, y);
+        int downLeft = getValueAdjacent(strings, Day3.Direction.DOWN_LEFT, x, y);
         if(downLeft != 0) {
             temp.add(downLeft);
         }
-        int downRight = getValueAdjacent(strings, Direction.DOWN_RIGHT, x, y);
+        int downRight = getValueAdjacent(strings, Day3.Direction.DOWN_RIGHT, x, y);
         if(downRight != 0) {
             temp.add(downRight);
         }

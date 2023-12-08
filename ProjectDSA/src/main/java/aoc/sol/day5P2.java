@@ -78,18 +78,132 @@ public class day5P2 {
         for (int i = 0; i < seeds.size(); i += 2) {
             seedPairs.add(new Pair(seeds.get(i), seeds.get(i + 1)));
         }
+        Set<Pair> visitedSeedPairs = new HashSet<>();
+        Set<Pair> visitedSoilPairs = new HashSet<>();
+        Set<Pair> visitedFertilizerPairs = new HashSet<>();
+        Set<Pair> visitedWaterPairs = new HashSet<>();
+        Set<Pair> visitedLightPairs = new HashSet<>();
+        Set<Pair> visitedTemperaturePairs = new HashSet<>();
+        Set<Pair> visitedHumidityPairs = new HashSet<>();
+        Set<Pair> visitedLocationPairs = new HashSet<>();
         for (Pair seedPair : seedPairs) {
-            List<Pair> fertilizerPairs = new ArrayList<>();
-            List<Pair> waterPairs = new ArrayList<>();
-            List<Pair> lightPairs = new ArrayList<>();
-            List<Pair> temperaturePairs = new ArrayList<>();
-            List<Pair> humidityPairs = new ArrayList<>();
-
+            if (visitedSeedPairs.contains(seedPair))
+                continue;
+            visitedSeedPairs.add(seedPair);
+            System.out.println("Seed Pair: " + seedPair.a + " " + seedPair.b);
             for (String s : seedToSoilMap) {
                 List<Pair> soilPairs = new ArrayList<>();
-                long[] range = Arrays.stream(s.split(" ")).filter(s1 -> !s1.equals("") && !s1.equals(" "))
+                long[] range = Arrays.stream(s.split(" ")).filter(s1 -> !s1.isEmpty() && !s1.equals(" "))
                         .mapToLong(Long::parseLong).toArray();
-
+                long a = seedPair.a;
+                long b = seedPair.a + seedPair.b - 1;
+                long rA = range[0];
+                long rB = range[0] + range[2] - 1;
+                addInListPair(a, b, rA, rB, soilPairs);
+                System.out.println("Soil Pair: " + Arrays.toString(soilPairs.toArray()));
+                for (Pair soilPair : soilPairs) {
+                    if (visitedSoilPairs.contains(soilPair))
+                        continue;
+                    visitedSoilPairs.add(soilPair);
+                    List<Pair> fertilizerPairs = new ArrayList<>();
+                    for (String s1 : soilToFertilizerMap) {
+                        long[] range1 = Arrays.stream(s1.split(" ")).filter(s2 -> !s2.isEmpty() && !s2.equals(" "))
+                                .mapToLong(Long::parseLong).toArray();
+                        long a1 = soilPair.a;
+                        long b1 = soilPair.a + soilPair.b - 1;
+                        long rA1 = range1[0];
+                        long rB1 = range1[0] + range1[2] - 1;
+                        addInListPair(a1, b1, rA1, rB1, fertilizerPairs);
+                        System.out.println("Fertilizer Pair: " + Arrays.toString(fertilizerPairs.toArray()));
+                        for (Pair fertilizerPair : fertilizerPairs) {
+                            if (visitedFertilizerPairs.contains(fertilizerPair))
+                                continue;
+                            visitedFertilizerPairs.add(fertilizerPair);
+                            List<Pair> waterPairs = new ArrayList<>();
+                            for (String s2 : fertilizerToWaterMap) {
+                                long[] range2 = Arrays.stream(s2.split(" ")).filter(s3 -> !s3.isEmpty() && !s3.equals(" "))
+                                        .mapToLong(Long::parseLong).toArray();
+                                long a2 = fertilizerPair.a;
+                                long b2 = fertilizerPair.a + fertilizerPair.b - 1;
+                                long rA2 = range2[0];
+                                long rB2 = range2[0] + range2[2] - 1;
+                                addInListPair(a2, b2, rA2, rB2, waterPairs);
+                                System.out.println("Water Pair: " + Arrays.toString(waterPairs.toArray()));
+                                for (Pair waterPair : waterPairs) {
+                                    if (visitedWaterPairs.contains(waterPair))
+                                        continue;
+                                    visitedWaterPairs.add(waterPair);
+                                    List<Pair> lightPairs = new ArrayList<>();
+                                    for (String s3 : waterToLightMap) {
+                                        long[] range3 = Arrays.stream(s3.split(" ")).filter(s4 -> !s4.isEmpty() && !s4.equals(" "))
+                                                .mapToLong(Long::parseLong).toArray();
+                                        long a3 = waterPair.a;
+                                        long b3 = waterPair.a + waterPair.b - 1;
+                                        long rA3 = range3[0];
+                                        long rB3 = range3[0] + range3[2] - 1;
+                                        addInListPair(a3, b3, rA3, rB3, lightPairs);
+                                        System.out.println("Light Pair: " + Arrays.toString(lightPairs.toArray()));
+                                        for (Pair lightPair : lightPairs) {
+                                            if (visitedLightPairs.contains(lightPair))
+                                                continue;
+                                            visitedLightPairs.add(lightPair);
+                                            List<Pair> temperaturePairs = new ArrayList<>();
+                                            for (String s4 : lightToTemperatureMap) {
+                                                long[] range4 = Arrays.stream(s4.split(" ")).filter(s5 -> !s5.isEmpty() && !s5.equals(" "))
+                                                        .mapToLong(Long::parseLong).toArray();
+                                                long a4 = lightPair.a;
+                                                long b4 = lightPair.a + lightPair.b - 1;
+                                                long rA4 = range4[0];
+                                                long rB4 = range4[0] + range4[2] - 1;
+                                                addInListPair(a4, b4, rA4, rB4, temperaturePairs);
+                                                System.out.println("Temperature Pair: " + Arrays.toString(temperaturePairs.toArray()));
+                                                for (Pair temperaturePair : temperaturePairs) {
+                                                    if (visitedTemperaturePairs.contains(temperaturePair))
+                                                        continue;
+                                                    visitedTemperaturePairs.add(temperaturePair);
+                                                    List<Pair> humidityPairs = new ArrayList<>();
+                                                    for (String s5 : temperatureToHumidityMap) {
+                                                        long[] range5 = Arrays.stream(s5.split(" ")).filter(s6 -> !s6.isEmpty() && !s6.equals(" "))
+                                                                .mapToLong(Long::parseLong).toArray();
+                                                        long a5 = temperaturePair.a;
+                                                        long b5 = temperaturePair.a + temperaturePair.b - 1;
+                                                        long rA5 = range5[0];
+                                                        long rB5 = range5[0] + range5[2] - 1;
+                                                        addInListPair(a5, b5, rA5, rB5, humidityPairs);
+                                                        System.out.println("Humidity Pair: " + Arrays.toString(humidityPairs.toArray()));
+                                                        for (Pair humidityPair : humidityPairs) {
+                                                            if (visitedHumidityPairs.contains(humidityPair))
+                                                                continue;
+                                                            visitedHumidityPairs.add(humidityPair);
+                                                            List<Pair> locationPairs = new ArrayList<>();
+                                                            for (String s6 : humidityToLocationMap) {
+                                                                long[] range6 = Arrays.stream(s6.split(" ")).filter(s7 -> !s7.isEmpty() && !s7.equals(" "))
+                                                                        .mapToLong(Long::parseLong).toArray();
+                                                                long a6 = humidityPair.a;
+                                                                long b6 = humidityPair.a + humidityPair.b - 1;
+                                                                long rA6 = range6[0];
+                                                                long rB6 = range6[0] + range6[2] - 1;
+                                                                addInListPair(a6, b6, rA6, rB6, locationPairs);
+                                                                System.out.println("Location Pair: " + Arrays.toString(locationPairs.toArray()));
+                                                                for (Pair locationPair : locationPairs) {
+                                                                    if (visitedLocationPairs.contains(locationPair))
+                                                                        continue;
+                                                                    visitedLocationPairs.add(locationPair);
+                                                                    long a7 = locationPair.a;
+                                                                    total.set(Math.min(total.get(), a7));
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -97,6 +211,44 @@ public class day5P2 {
         out.println(total.get());
         out.println("Took " + (endTime - startTime) / 1000000 + " ms");
         out.close();
+    }
+
+    public static void addInListPair(long a, long b, long rA, long rB, List<Pair> x) {
+        System.out.println("-----------------"+" a: "+a+" b: "+b+" rA: "+rA+" rB: "+rB);
+        if (a > rA) {
+            if (b < rB) {
+                Pair p2 = new Pair(a, b - a + 1);
+                x.add(p2);
+            } else if (b == rB) {
+                Pair p2 = new Pair(a, b - a + 1);
+                x.add(p2);
+            } else {
+                Pair p2 = new Pair(a, rB - a + 1);
+                x.add(p2);
+            }
+        } else if (a == rA) {
+            if (b < rB) {
+                Pair p1 = new Pair(a, b - a + 1);
+                x.add(p1);
+            } else if (b == rB) {
+                Pair p1 = new Pair(a, b - a + 1);
+                x.add(p1);
+            } else {
+                Pair p1 = new Pair(a, rB - a + 1);
+                x.add(p1);
+            }
+        } else {
+            if (b < rB) {
+                Pair p2 = new Pair(rA, b - a + 1);
+                x.add(p2);
+            } else if (b == rB) {
+                Pair p2 = new Pair(rA, b - a + 1);
+                x.add(p2);
+            } else {
+                Pair p2 = new Pair(rA, rB - a + 1);
+                x.add(p2);
+            }
+        }
     }
 
 
@@ -132,6 +284,10 @@ public class day5P2 {
         Pair(long a, long b) {
             this.a = a;
             this.b = b;
+        }
+
+        public String toString() {
+            return "(" + a + ", " + b + ")";
         }
 
         public boolean equals(Object o) {

@@ -333,8 +333,7 @@ public class Day3 {
             return st;
         }
     }
-}
-
-enum Direction {
-    UP, DOWN, LEFT, RIGHT, UP_RIGHT, UP_LEFT, DOWN_RIGHT, DOWN_LEFT
+    enum Direction {
+        UP, DOWN, LEFT, RIGHT, UP_RIGHT, UP_LEFT, DOWN_RIGHT, DOWN_LEFT
+    }
 }
