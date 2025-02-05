@@ -1,0 +1,96 @@
+=====PART 3=====
+Registration Date
+Reference No.
+Type
+Details
+Datasource
+1
+10/12/2004
+Planning Charge
+Application Number: P/04/1562/FUL Description: Minor Resiting Of 3 Detached Dwellings (Approved Under Consent
+P/04/1123) Address: Former Aber Youth Centre Glyn Street Ogmore Vale CF32 7AS Statute: Town and Country
+Planning Act 1990
+2
+01/10/2004
+Planning Charge
+Application Number: P/04/1123/FUL Description: Erection Of 3 Detached Dwellings And One Bungalow For Disabled
+Person Address: Former Aber Youth Centre Glyn Street Ogmore Vale CF32 7AS Statute: Town and Country Planning
+Act 1990
+Miscellaneous Charges
+Land Charge entries registered under Part 4 Miscellaneous Charges.
+NONE IDENTIFIED
+=====PART 4=====
+Fenland Ways Maintenance Charges
+Land Charge entries registered under Part 5 Fenland Ways Maintenance Charges.
+NONE IDENTIFIED
+=====PART 10=====
+Light Obstruction Charges
+Land Charge entries registered under Part 11 Light Obstruction Charges.
+NONE IDENTIFIED
+=====Section 1.1(l)=====
+Any building regulations certificate or notice issued in respect of work carried out
+under a competent person scheme?
+1 IDENTIFIED
+Report Reference 12678260
+2, Aber Court, Glyn Street, Ogmore Vale, Bridgend, CF32 7AS
+Personal Regulated Search
+6
+Planning & Building Regulations
+Report Reference 12678260
+2, Aber Court, Glyn Street, Ogmore Vale, Bridgend, CF32 7AS
+Personal Regulated Search
+7
+Local Development Framework
+The Local Development Plan or Local Development Framework sets out the Local Authority’s planning policies for the
+the area, and help ensure that government policy is being met on sustainable development, housing supply and
+Local Plan / Local Development Framework
+What designations of land use for the property or the area, and what specific proposals for the
+property, are contained in any existing or proposed development plan?
+3 IDENTIFIED
+=====Section 2.1(a)=====
+Status
+=====Section 3.9(m)=====
+Proceedings to enforce a planning agreement or planning
+contribution?
+NONE IDENTIFIED
+=====Section 3.10(a)=====
+If, yes, do any of the following subsist in relation to the property, or has a local
+authority decided to issue, serve, make or commence any of the following:- (i) a
+liability notice?; (ii) a notice of chargeable development?; (iii) a demand notice?;
+(iv) a default liability notice?; (v) an assumption of liability notice?; (vi) a
+commencement notice?
+NONE IDENTIFIED
+=====Section 3.11(a)=====
+An unimplemented resolution to designate the area a Conservation Area?
+NONE IDENTIFIED
+=====Section 3.11(b)=====
+Compulsory Purchase
+Has any enforcement order or decision been made to compulsorily purchase or
+acquire the property?
+NONE IDENTIFIED
+=====Section 3.13=====
+(a)
+Local Authorities have a statutory duty to maintain a Register of Contaminated Land, and where any entries affecting the
+Do any of the following apply (including any relating to land adjacent to or adjoining the property which
+has been identified as contaminated land because it is such a condition that harm or pollution of
+controlled waters might be caused on the property):-
+NONE IDENTIFIED
+Radon Gas
+impact, but at certain percentages determined to be above the Action Level by the Health Protection Agency or its
+whether the radon concentration has been measured in the property; whether the result was at or above the Action Level
+and if so whether remedial measures were installed and whether the radon concentration was re-tested to assess the
+Do records indicate that the property is in a “Radon Affected Area” as identified by Public Health
+England or Public Health Wales?
+MEDIUM
+=====Section 3.14=====
+Details
+National Radiological Protection Board (NRPB)
+Datasource
+1
+Report Reference 12678260
+2, Aber Court, Glyn Street, Ogmore Vale, Bridgend, CF32 7AS
+Personal Regulated Search
+19
+Assets of Community Value
+Has the property been nominated as an asset of community value?
+NONE IDENTIFIED

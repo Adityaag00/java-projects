@@ -112,3 +112,25 @@ for line in f:
 #save the output in a file
 with open('output.txt', 'w') as f:
     f.write(text_out)
+
+sections_to_extract = ['PART 3', 'PART 4', 'PART 10', '2.1(a)', '3.14', '3.13', '3.9(m)', '3.11(a)', '3.11(b)',
+                       '3.10(a)', '1.1(l)']
+
+text_out2 = ''
+is_section_found = False
+
+for line in text_out.splitlines():
+    if line[0] == '=' and any(section in line for section in sections_to_extract):
+        text_out2 += line
+        text_out2 += '\n'
+        is_section_found = True
+        continue
+    if is_section_found:
+        if '=====' in line:
+            is_section_found = False
+            continue
+        text_out2 += line
+        text_out2 += '\n'
+
+with open('output2.txt', 'w') as f:
+    f.write(text_out2)
