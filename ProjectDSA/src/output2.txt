@@ -47,8 +47,23 @@ Local Plan / Local Development Framework
 What designations of land use for the property or the area, and what specific proposals for the
 property, are contained in any existing or proposed development plan?
 3 IDENTIFIED
+=====Section 2.1=====
 =====Section 2.1(a)=====
-Status
+Status 
+=====Section 2.1(c)=====
+To be made up by local authority 
+=====Section 2.1(b)=====
+Subject to adoption 
+=====Section 2.1(d)=====
+To be adopted by local authority 
+No
+No
+No
+ADOPTED
+Public Rights of Way
+Is any public right of way which abuts on, or crosses the property, shown on a definitive map or
+revised definitive map?
+NONE IDENTIFIED
 =====Section 3.9(m)=====
 Proceedings to enforce a planning agreement or planning
 contribution?
@@ -60,6 +75,9 @@ liability notice?; (ii) a notice of chargeable development?; (iii) a demand noti
 (iv) a default liability notice?; (v) an assumption of liability notice?; (vi) a
 commencement notice?
 NONE IDENTIFIED
+=====Section 3.10(b)=====
+Has any demand notice been suspended?
+NONE IDENTIFIED
 =====Section 3.11(a)=====
 An unimplemented resolution to designate the area a Conservation Area?
 NONE IDENTIFIED
@@ -68,12 +86,7 @@ Compulsory Purchase
 Has any enforcement order or decision been made to compulsorily purchase or
 acquire the property?
 NONE IDENTIFIED
-=====Section 3.13=====
-(a)
-Local Authorities have a statutory duty to maintain a Register of Contaminated Land, and where any entries affecting the
-Do any of the following apply (including any relating to land adjacent to or adjoining the property which
-has been identified as contaminated land because it is such a condition that harm or pollution of
-controlled waters might be caused on the property):-
+=====Section 3.13(a)=====
 NONE IDENTIFIED
 Radon Gas
 impact, but at certain percentages determined to be above the Action Level by the Health Protection Agency or its

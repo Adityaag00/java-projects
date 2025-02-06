@@ -139,13 +139,15 @@ This section of the report deals with the adoption of roads, footways and footpa
 confirmed either with the property vendor or developer prior to purchase, or you may wish to consider conducting a
 Glyn Street
 ADOPTED
-=====Section 2.1(a)=====
-Status
-=====Section 2.1(c)=====
-=====Section 2.1(b)=====
-Subject
-=====Section 2.1(d)=====
 =====Section 2.1=====
+=====Section 2.1(a)=====
+Status 
+=====Section 2.1(c)=====
+To be made up by local authority 
+=====Section 2.1(b)=====
+Subject to adoption 
+=====Section 2.1(d)=====
+To be adopted by local authority 
 No
 No
 No
@@ -485,11 +487,11 @@ Contaminated Land // Radon Gas
 A contaminated land notice
 NONE IDENTIFIED
 =====Section 3.13=====
-(a)
 Local Authorities have a statutory duty to maintain a Register of Contaminated Land, and where any entries affecting the
 Do any of the following apply (including any relating to land adjacent to or adjoining the property which
 has been identified as contaminated land because it is such a condition that harm or pollution of
 controlled waters might be caused on the property):-
+=====Section 3.13(a)=====
 NONE IDENTIFIED
 Radon Gas
 impact, but at certain percentages determined to be above the Action Level by the Health Protection Agency or its

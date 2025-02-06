@@ -844,7 +844,6 @@ Contaminated Land // Radon Gas
 A contaminated land notice
 NONE IDENTIFIED
 3.13
-(a)
 Local Authorities have a statutory duty to maintain a Register of Contaminated Land, and where any entries affecting the
 property have been made in this register, they will be revealed here. The Register, however, may still be being compiled
 in some areas. Additionally, this Local Authority Search is limited to the property itself. An Environmental Report can help
@@ -853,6 +852,7 @@ Do any of the following apply (including any relating to land adjacent to or adj
 has been identified as contaminated land because it is such a condition that harm or pollution of
 controlled waters might be caused on the property):-
 3.13
+(a)
 NONE IDENTIFIED
 Radon Gas
 Radon is a naturally occurring gas that can affect land and property across the United Kingdom. It typically has a low

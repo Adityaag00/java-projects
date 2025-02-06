@@ -71,14 +71,23 @@ for line in f:
                 is_point_section_print_done = False
                 point_section_main = line
                 continue
+            if not is_point_section_print_done:
+                text_out += '=====Section '+ point_section_main + '====='
+                text_out += '\n'
+                is_point_section_print_done = True
             if '(' in line:
                 split = line.split(" ")
                 if len(split) > 1:
                     text_out += '=====Section '+ split[0] + '====='
                     text_added_in_output = split[0]
                     text_out += '\n'
-                    if split[1]:
-                        text_out += split[1]
+                    does_more_exist = len(split) > 1
+                    for i in range(1, len(split)):
+                        if not split[i]:
+                            continue
+                        text_out += split[i]
+                        text_out += ' '
+                    if does_more_exist:
                         text_out += '\n'
                     continue
                 text_out += '=====Section '+ line + '====='
@@ -113,8 +122,8 @@ for line in f:
 with open('output.txt', 'w') as f:
     f.write(text_out)
 
-sections_to_extract = ['PART 3', 'PART 4', 'PART 10', '2.1(a)', '3.14', '3.13', '3.9(m)', '3.11(a)', '3.11(b)',
-                       '3.10(a)', '1.1(l)']
+sections_to_extract = ['PART 3', 'PART 4', 'PART 10', '2.1(a)', '2.1(b)','2.1(c)','2.1(d)','3.13(a)', '3.14', '3.9(m)', '3.11(a)', '3.11(b)'
+    , '3.10(a)', '3.10(b)','1.1(l)','2.1','3.13(a)']
 
 text_out2 = ''
 is_section_found = False
